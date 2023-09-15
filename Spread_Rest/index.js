@@ -80,7 +80,7 @@ function sum2(a, b, ...rest) {
 const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const a = numbers2[0]
-// const b = numbers2[1] - в EC6 есть более короткая запись -диструризация:
+// const b = numbers2[1] - в EC6 есть более короткая запись -деструктуризация:
 const [a, b, ...other] = numbers2
 console.log(a, b, other)
 
@@ -91,6 +91,6 @@ const person = {
     country: 'Russia'
 }
 
-const {name, age, ...address} = person //диструкторизация для объектов  с rest
+const {name, age, ...address} = person //деструктуризация объектов  с rest
 
 console.log(name, age, address)
