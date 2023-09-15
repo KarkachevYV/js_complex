@@ -13,7 +13,7 @@ console.log(allCities)
 const allCities1 = citisEurope.concat(citiesRussia)
 console.log(allCities1)
 
-// при этом spread в отличие от concat ещё работает и с объектамим
+// при этом spread в отличие от concat ещё работает и с объектами
 
 const citiesRussiaWithPopulation = {
     Moscow: 20,
@@ -30,7 +30,7 @@ const citiesEuropeWithPopulation = {
 
 
 console.log({...citiesEuropeWithPopulation})
-console.log({...citiesEuropeWithPopulation, ...citiesRussiaWithPopulation})//подобный подход используют и фреймворки React, Vue, но...Spread также имеет возможность выборки за вторым 
+console.log({...citiesEuropeWithPopulation, ...citiesRussiaWithPopulation})//подобный подход используют и фреймворки React, Vue, но...Spread также имеет возможность выборки по второму объекту 
 
 ///примеры использования
 
