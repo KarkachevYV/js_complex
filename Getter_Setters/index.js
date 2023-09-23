@@ -10,7 +10,7 @@ const person = Object.create(
         enumerable: false,//по умолчанию, именно данная пара, делает opacity
         writable: false, //по умолчанию, именно данная пара, делает пару const которую нельзя менять
         configurable: false //по умолчанию ключ удалять нельзя
-        ///протородескрипторы:enumerable, writable, configurable  - обязательные ключи Object.create
+        ///пропертидескрипторы:enumerable, writable, configurable  - обязательные ключи Object.create
     },
     birthYear: {
         value: 1961,
