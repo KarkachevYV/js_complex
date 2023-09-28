@@ -97,13 +97,13 @@ const newPeople4 = people
 console.log(newPeople4)//здесь мы изменим елементы массива по своему усмотрению
 
 const amountSqrt = people
-    .filter(person => person.budjet > 5000)
+    .filter(person => person.budjet > 5000)//подобная запись называется чейн, а о их последовательности , в этом примере три чейна, говорят - зачейнить
     .map(person => {
         return {
             info: `${person.name} (${person.age})`,
             budjet: Math.sqrt(person.budjet)
         }        
     })
-    .reduce((total, person) => total + person.budjet, 0)
+    .reduce((total, person) => total + person.budjet, 0)// данный метод использовать при чейне нужно последним, ибо он выдаёт число, а все предыдущие массивы
 
     console.log(amountSqrt)//а тут найдём что-то общее, не адекватное
