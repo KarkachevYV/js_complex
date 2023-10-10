@@ -70,7 +70,10 @@ $.modal = function(options) {//создаём свой плагин(node)
             $modal.classList.add('hide')
             setTimeout(() => {
                 $modal.classList.remove('hide')
-                closing = false               
+                closing = false  
+                if (typeof options.onclose === 'function') {//если метод в наличие и он функция 
+                    options.onclose()//то метод вызывается и он соответственно попадает в прототипы, что позволяет к нему обратиться в новом плагине
+                }             
             }, ANIMATION_SPEED)
         }
     }
