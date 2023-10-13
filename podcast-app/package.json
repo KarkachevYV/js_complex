@@ -1,0 +1,30 @@
+{
+  "name": "podcast-app",
+  "version": "1.0.0",
+  "description": "Karkach Podcast App",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "Yirii <pchelovod02@mail.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "firebase-tools": "^12.7.0",
+    "tar": "^6.2.0",
+    "uuid": "^9.0.1"
+  }
+}
